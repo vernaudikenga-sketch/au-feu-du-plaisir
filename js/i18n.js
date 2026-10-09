@@ -88,6 +88,19 @@ const I18N = {
     "contact.mapText": "Ο χάρτης φορτώνεται από το Google Maps, το οποίο μπορεί να χρησιμοποιεί cookies.",
     "days.closed": "Κλειστά",
 
+    "top.today": "Σήμερα",
+    "top.closed": "Σήμερα κλειστά",
+    "band.1t": "Αφρικανική κουζίνα",
+    "band.1d": "Κονγκό, Καμερούν, Ακτή Ελεφαντοστού",
+    "band.2t": "Ψητά της στιγμής",
+    "band.2d": "Κοτόπουλο, ψάρι, soya",
+    "band.3t": "Βραδιές & live",
+    "band.3d": "DJ, συναυλίες, θεματικές βραδιές",
+    "band.4t": "Πακέτο & delivery",
+    "band.4d": "Τηλεφωνικά ή μέσω WhatsApp",
+    "footer.contact": "Επικοινωνία",
+    "footer.hours": "Ωράριο",
+    "footer.follow": "Ακολουθήστε μας",
     "footer.tag": "Η γεύση της Αφρικής στην καρδιά της Αθήνας."
   },
 
@@ -176,6 +189,19 @@ const I18N = {
     "contact.mapText": "La carte est fournie par Google Maps, qui peut déposer des cookies.",
     "days.closed": "Fermé",
 
+    "top.today": "Aujourd'hui",
+    "top.closed": "Fermé aujourd'hui",
+    "band.1t": "Cuisine africaine",
+    "band.1d": "Congo, Cameroun, Côte d'Ivoire",
+    "band.2t": "Grillades minute",
+    "band.2d": "Poulet, poisson, soya",
+    "band.3t": "Soirées & live",
+    "band.3d": "DJ, concerts, soirées à thème",
+    "band.4t": "À emporter & livraison",
+    "band.4d": "Par téléphone ou WhatsApp",
+    "footer.contact": "Contact",
+    "footer.hours": "Horaires",
+    "footer.follow": "Suivez-nous",
     "footer.tag": "Le goût de l'Afrique au cœur d'Athènes."
   },
 
@@ -264,6 +290,19 @@ const I18N = {
     "contact.mapText": "The map is provided by Google Maps, which may set cookies.",
     "days.closed": "Closed",
 
+    "top.today": "Today",
+    "top.closed": "Closed today",
+    "band.1t": "African cuisine",
+    "band.1d": "Congo, Cameroon, Ivory Coast",
+    "band.2t": "Grilled to order",
+    "band.2d": "Chicken, fish, soya",
+    "band.3t": "Nights & live music",
+    "band.3d": "DJs, live bands, themed nights",
+    "band.4t": "Takeaway & delivery",
+    "band.4d": "By phone or WhatsApp",
+    "footer.contact": "Contact",
+    "footer.hours": "Opening hours",
+    "footer.follow": "Follow us",
     "footer.tag": "The taste of Africa in the heart of Athens."
   }
 };

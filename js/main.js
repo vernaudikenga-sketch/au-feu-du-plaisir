@@ -47,6 +47,7 @@
     renderDaily();
     renderAgenda();
     renderHours();
+    renderToday();
     renderOrder();
     refreshBookingFields();
   }
@@ -68,9 +69,13 @@
     const cat = MENU.find((c) => c.cat === activeCat);
     $("#menuList").innerHTML = cat.items.map((it) => `
       <article class="dish">
-        <h3 class="dish__name">${it.name}${it.tags.map((tg) => `<span class="tag${tg === "veg" ? " tag--veg" : ""}">${t("tag." + tg)}</span>`).join("")}</h3>
-        <span class="dish__price">${price(it.price)}</span>
-        <p class="dish__desc">${originChip(it.origin)} ${it.d[lang]}</p>
+        <div class="dish__top">
+          <h3 class="dish__name">${it.name}</h3>
+          <span class="dish__dots" aria-hidden="true"></span>
+          <span class="dish__price">${price(it.price)}</span>
+        </div>
+        ${it.origin || it.tags.length ? `<div class="dish__meta">${originChip(it.origin)}${it.tags.map((tg) => `<span class="tag${tg === "veg" ? " tag--veg" : ""}">${t("tag." + tg)}</span>`).join("")}</div>` : ""}
+        <p class="dish__desc">${it.d[lang]}</p>
       </article>`).join("");
   }
 
@@ -78,16 +83,24 @@
   function renderDaily() {
     const today = new Date().getDay();
     const dish = CONFIG.daily[today];
-    const box = $("#daily");
+    const box = $("#heroDaily");
     box.hidden = !dish;
     if (!dish) return;
     box.innerHTML = `
-      <div class="daily__badge">${t("daily.label")}<strong>${weekday(today)}</strong></div>
-      <div>
-        <h3 class="daily__name">${dish.name} ${originChip(dish.origin)}</h3>
-        <p>${dish.d[lang]}</p>
-      </div>
-      <span class="daily__price">${price(dish.price)}</span>`;
+      <p class="hero__daily-label"><span>${t("daily.label")}</span><span>${weekday(today)}</span></p>
+      <h3>${dish.name}</h3>
+      <p>${dish.d[lang]}</p>
+      <div class="hero__daily-foot">${originChip(dish.origin)}<span class="hero__daily-price">${price(dish.price)}</span></div>`;
+  }
+
+  /* ---------- Horaires du jour (barre du haut) ---------- */
+  function renderToday() {
+    const day = new Date().getDay();
+    const { restaurant: r, night: n } = CONFIG.hours;
+    const parts = [];
+    if (r.days.includes(day)) parts.push(`${r.open} – ${r.close}`);
+    if (n.days.includes(day)) parts.push(`${t("contact.night")} ${n.open} – ${n.close}`);
+    $("#todayHours").textContent = parts.length ? `${t("top.today")} · ${parts.join(" · ")}` : t("top.closed");
   }
 
   /* ---------- Agenda des soirées ---------- */
@@ -132,7 +145,7 @@
       <tr><th colspan="2">${t("contact.night")}</th></tr>
       <tr><td>${cap(dayRanges(n.days))}</td><td>${n.open} – ${n.close}</td></tr>`;
     if (closed.length) html += `<tr class="hours__closed"><td>${cap(dayRanges(closed))}</td><td>${t("days.closed")}</td></tr>`;
-    $("#hours").innerHTML = html;
+    $$(".js-hours").forEach((el) => { el.innerHTML = html; });
   }
 
   /* ---------- Commande à emporter / livraison ---------- */
@@ -144,18 +157,11 @@
   }
 
   /* ---------- Header au scroll + menu mobile ---------- */
-  const header = $(".header");
-  const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 40);
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
   const burger = $("#burger"), nav = $("#nav");
   const closeNav = () => { nav.classList.remove("is-open"); burger.setAttribute("aria-expanded", "false"); };
   burger.addEventListener("click", () => {
     const open = nav.classList.toggle("is-open");
     burger.setAttribute("aria-expanded", String(open));
-    if (open) header.classList.add("is-scrolled");
-    else onScroll();
   });
   $$("a", nav).forEach((a) => a.addEventListener("click", closeNav));
 
