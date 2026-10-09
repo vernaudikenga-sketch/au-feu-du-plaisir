@@ -1,0 +1,13 @@
+Déposez ici les vraies photos du restaurant (format JPG, idéalement < 300 Ko chacune).
+Les noms doivent être exactement ceux-ci ; le site les affiche automatiquement :
+
+  hero.jpg        Grande photo d'accueil (plat signature ou salle), paysage, 1920x1080
+  about.jpg       Portrait (chef, équipe ou cuisine), vertical 4:5, 1000x1250
+  gallery-1.jpg   Grande photo de galerie (carrée), 1200x1200
+  gallery-2.jpg   à gallery-5.jpg : plats, salle, ambiance, façade, 800x600 minimum
+  og-cover.jpg    Image d'aperçu lors d'un partage WhatsApp/Facebook, 1200x630
+
+Tant qu'une photo manque, un fond rouge dégradé s'affiche à sa place.
+
+LOGO : quand le client l'aura, déposer images/logo.svg (ou logo.png fond transparent)
+et remplacer le logo provisoire dans index.html (commentaire « Logo provisoire » en haut).

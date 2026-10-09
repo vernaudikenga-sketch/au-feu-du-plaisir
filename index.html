@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Au Feu Du Plaisir · African Restaurant & Club Athens</title>
+  <meta name="description" content="Au Feu Du Plaisir — Congolese, Cameroonian & Ivorian cuisine, grill, live music and party nights in Athens. Agiou Meletiou 73. Takeaway & delivery. Book online.">
+  <meta name="theme-color" content="#C8102E">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph (partage Facebook / WhatsApp / Instagram) -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Au Feu Du Plaisir · African Restaurant & Club Athens">
+  <meta property="og:description" content="Congolese, Cameroonian & Ivorian cuisine, live music and party nights — Agiou Meletiou 73, Athens.">
+  <meta property="og:image" content="images/og-cover.jpg">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_GB">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Restaurant", "NightClub"],
+    "name": "Au Feu Du Plaisir",
+    "servesCuisine": ["Congolese", "Cameroonian", "Ivorian", "African", "Grill"],
+    "priceRange": "€",
+    "paymentAccepted": "Cash, Credit Card",
+    "telephone": "+306931456288",
+    "email": "aufeuduplaizir@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Agiou Meletiou 73",
+      "postalCode": "11251",
+      "addressLocality": "Athens",
+      "addressCountry": "GR"
+    },
+    "sameAs": ["https://www.instagram.com/aufeuduplaisir_athenes/"],
+    "acceptsReservations": "True",
+    "hasDeliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <!-- Logo provisoire : remplacer par <img src="images/logo.svg" alt="Au Feu Du Plaisir"> quand le client l'aura -->
+      <a href="#top" class="logo" aria-label="Au Feu Du Plaisir">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#flame"/></svg>
+        <span class="logo__text">Au Feu <em>Du</em> Plaisir</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Menu">
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#nights" data-i18n="nav.nights">Soirées</a>
+        <a href="#order" data-i18n="nav.order">Commander</a>
+        <a href="#gallery" data-i18n="nav.gallery">Galerie</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#booking" class="btn btn--red btn--sm nav__cta" data-i18n="nav.book">Réserver</a>
+      </nav>
+
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="el" aria-label="Ελληνικά">EL</button>
+        <button type="button" data-lang="fr" aria-label="Français">FR</button>
+        <button type="button" data-lang="en" aria-label="English">EN</button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--light" data-i18n="hero.eyebrow">Congo · Cameroun · Côte d'Ivoire</p>
+        <h1 class="hero__title" data-i18n-html="hero.title">Le goût de l'Afrique,<br><em>au cœur d'Athènes</em></h1>
+        <p class="hero__sub" data-i18n="hero.sub"></p>
+        <div class="hero__ctas">
+          <a href="#booking" class="btn btn--white" data-i18n="hero.book">Réserver une table</a>
+          <a href="#menu" class="btn btn--ghost" data-i18n="hero.menu">Voir le menu</a>
+        </div>
+        <ul class="hero__facts">
+          <li><svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-star"/></svg><strong>4,6</strong> <span data-i18n="hero.fact1">39 avis Google</span></li>
+          <li><svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-banknote"/></svg><strong>10–15 €</strong> <span data-i18n="hero.fact2">par personne</span></li>
+          <li><svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-music"/></svg><span data-i18n="hero.fact3">Live music & soirées</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media photo" style="background-image:url('images/about.jpg'),var(--ph)" role="img" aria-label="Au Feu Du Plaisir">
+          <span class="photo__label">images/about.jpg</span>
+        </div>
+        <div>
+          <p class="eyebrow" data-i18n="about.eyebrow">Notre histoire</p>
+          <h2 class="title" data-i18n="about.title"></h2>
+          <p class="lead" data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+          <div class="flags" aria-hidden="true">
+            <span class="flag flag--cd"></span><span class="flag flag--cm"></span><span class="flag flag--ci"></span>
+          </div>
+          <ul class="features">
+            <li><span class="features__icon"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+              <div><h3 data-i18n="about.f1t"></h3><p data-i18n="about.f1d"></p></div></li>
+            <li><span class="features__icon"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-flame"/></svg></span>
+              <div><h3 data-i18n="about.f2t"></h3><p data-i18n="about.f2d"></p></div></li>
+            <li><span class="features__icon"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-music"/></svg></span>
+              <div><h3 data-i18n="about.f3t"></h3><p data-i18n="about.f3d"></p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section class="section menu pattern" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow" data-i18n="menu.eyebrow">La carte</p>
+          <h2 class="title" data-i18n="menu.title">Nos spécialités</h2>
+          <p class="muted" data-i18n="menu.sub"></p>
+        </div>
+        <!-- Plat du jour (rempli depuis config.js) -->
+        <div class="daily" id="daily" hidden></div>
+        <div class="tabs" role="tablist" id="menuTabs"></div>
+        <div class="menu__list" id="menuList" role="tabpanel"></div>
+        <p class="menu__note muted" data-i18n="menu.note"></p>
+      </div>
+    </section>
+
+    <!-- ===== SOIRÉES / CLUB ===== -->
+    <section class="section nights" id="nights">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow eyebrow--neon" data-i18n="nights.eyebrow">La nuit</p>
+          <h2 class="title title--light" data-i18n="nights.title"></h2>
+          <p class="nights__sub" data-i18n="nights.sub"></p>
+        </div>
+        <div class="nights__grid">
+          <article class="ncard"><span class="ncard__icon"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-mic"/></svg></span>
+            <h3 data-i18n="nights.c1t"></h3><p data-i18n="nights.c1d"></p></article>
+          <article class="ncard"><span class="ncard__icon"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-disc"/></svg></span>
+            <h3 data-i18n="nights.c2t"></h3><p data-i18n="nights.c2d"></p></article>
+          <article class="ncard"><span class="ncard__icon"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-wine"/></svg></span>
+            <h3 data-i18n="nights.c3t"></h3><p data-i18n="nights.c3d"></p></article>
+          <article class="ncard"><span class="ncard__icon"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <h3 data-i18n="nights.c4t"></h3><p data-i18n="nights.c4d"></p></article>
+        </div>
+
+        <div class="agenda">
+          <h3 class="agenda__title" data-i18n="nights.agenda">Au programme</h3>
+          <div id="agenda"></div>
+        </div>
+
+        <div class="center nights__ctas">
+          <a href="#booking" class="btn btn--red" data-book-type="night" data-i18n="nights.book">Réserver pour une soirée</a>
+          <a href="#booking" class="btn btn--ghost" data-book-type="event" data-i18n="nights.private">Demander un devis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À EMPORTER & LIVRAISON ===== -->
+    <section class="section order" id="order">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow" data-i18n="order.eyebrow">À emporter & livraison</p>
+          <h2 class="title" data-i18n="order.title"></h2>
+          <p class="muted" data-i18n="order.sub"></p>
+        </div>
+        <div class="order__grid">
+          <article class="ocard">
+            <span class="ocard__icon"><svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-bag"/></svg></span>
+            <h3 data-i18n="order.takeaway">À emporter</h3>
+            <p class="muted" data-i18n="order.takeawayD"></p>
+          </article>
+          <article class="ocard">
+            <span class="ocard__icon"><svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-bike"/></svg></span>
+            <h3 data-i18n="order.delivery">Livraison</h3>
+            <p class="muted" data-i18n="order.deliveryD"></p>
+          </article>
+        </div>
+        <div class="order__ctas">
+          <a class="btn btn--red" href="tel:+306931456288">
+            <svg width="18" height="18" aria-hidden="true"><use href="#phone"/></svg>
+            <span data-i18n="order.call">Commander par téléphone</span></a>
+          <a class="btn btn--outline" id="orderWa" href="https://wa.me/306931456288" target="_blank" rel="noopener">
+            <svg width="18" height="18" aria-hidden="true"><use href="#wa"/></svg>
+            <span data-i18n="order.wa">Commander sur WhatsApp</span></a>
+        </div>
+        <div class="platforms" id="platforms" hidden>
+          <span class="muted" data-i18n="order.on">Disponible aussi sur :</span>
+          <div class="platforms__list" id="platformList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section pattern" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Galerie</p>
+          <h2 class="title" data-i18n="gallery.title">L'ambiance du Feu</h2>
+        </div>
+        <div class="gallery">
+          <div class="photo g1" style="background-image:url('images/gallery-1.jpg'),var(--ph)"><span class="photo__label">gallery-1.jpg</span></div>
+          <div class="photo g2" style="background-image:url('images/gallery-2.jpg'),var(--ph)"><span class="photo__label">gallery-2.jpg</span></div>
+          <div class="photo g3" style="background-image:url('images/gallery-3.jpg'),var(--ph)"><span class="photo__label">gallery-3.jpg</span></div>
+          <div class="photo g4" style="background-image:url('images/gallery-4.jpg'),var(--ph)"><span class="photo__label">gallery-4.jpg</span></div>
+          <div class="photo g5" style="background-image:url('images/gallery-5.jpg'),var(--ph)"><span class="photo__label">gallery-5.jpg</span></div>
+        </div>
+        <p class="center">
+          <a class="btn btn--outline" href="https://www.instagram.com/aufeuduplaisir_athenes/" target="_blank" rel="noopener">
+            <svg width="18" height="18" aria-hidden="true"><use href="#ig"/></svg>
+            <span data-i18n="gallery.ig">Suivez-nous sur Instagram</span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="section reviews" id="reviews">
+      <div class="container reviews__inner">
+        <div class="reviews__score">
+          <span class="reviews__num">4,6</span>
+          <span class="stars" role="img" aria-label="4.6 / 5"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-star"/></svg><span class="stars__half"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-star"/></svg></span></span>
+          <span data-i18n="reviews.count">39 avis sur Google</span>
+        </div>
+        <div>
+          <p class="eyebrow eyebrow--light" data-i18n="reviews.eyebrow">Ils en parlent</p>
+          <h2 class="title title--light" data-i18n="reviews.title"></h2>
+          <p data-i18n="reviews.sub"></p>
+          <div class="reviews__ctas">
+            <a class="btn btn--white" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Au+Feu+Du+Plaisir+Agiou+Meletiou+73+Athens" data-i18n="reviews.read">Lire les avis</a>
+            <a class="btn btn--ghost" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Au+Feu+Du+Plaisir+Agiou+Meletiou+73+Athens" data-i18n="reviews.write">Laisser un avis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RÉSERVATION EN LIGNE ===== -->
+    <section class="section booking pattern" id="booking">
+      <div class="container booking__grid">
+        <div>
+          <p class="eyebrow" data-i18n="booking.eyebrow">Réservation en ligne</p>
+          <h2 class="title" data-i18n="booking.title"></h2>
+          <p class="lead" data-i18n="booking.sub"></p>
+          <ul class="booking__alt">
+            <li><a href="tel:+306931456288"><svg width="20" height="20" aria-hidden="true"><use href="#phone"/></svg> +30 693 145 6288</a></li>
+            <li><a href="https://wa.me/306931456288" target="_blank" rel="noopener"><svg width="20" height="20" aria-hidden="true"><use href="#wa"/></svg> WhatsApp</a></li>
+          </ul>
+          <p class="muted small" data-i18n="booking.groups"></p>
+        </div>
+
+        <div class="booking__box">
+          <form class="form" id="bookingForm" novalidate>
+            <fieldset class="types">
+              <legend data-i18n="form.type">Type de réservation</legend>
+              <label class="type"><input type="radio" name="type" value="meal" checked>
+                <span class="type__card"><span class="type__icon"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-utensils"/></svg></span>
+                  <strong data-i18n="type.meal">Repas</strong><small data-i18n="type.mealD"></small></span></label>
+              <label class="type"><input type="radio" name="type" value="night">
+                <span class="type__card"><span class="type__icon"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-disc"/></svg></span>
+                  <strong data-i18n="type.night">Soirée</strong><small data-i18n="type.nightD"></small></span></label>
+              <label class="type"><input type="radio" name="type" value="event">
+                <span class="type__card"><span class="type__icon"><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-users"/></svg></span>
+                  <strong data-i18n="type.event">Événement privé</strong><small data-i18n="type.eventD"></small></span></label>
+            </fieldset>
+
+            <div class="form__row form__row--3">
+              <label><span data-i18n="form.date">Date</span>
+                <input name="date" type="date" required></label>
+              <label><span data-i18n="form.time">Heure</span>
+                <select name="time" required disabled></select></label>
+              <label><span data-i18n="form.guests">Personnes</span>
+                <select name="guests" required></select></label>
+            </div>
+            <p class="form__warn" id="closedMsg" role="alert" hidden data-i18n="form.closed"></p>
+
+            <div class="form__row">
+              <label><span data-i18n="form.name">Nom</span>
+                <input name="name" required autocomplete="name"></label>
+              <label><span data-i18n="form.phone">Téléphone</span>
+                <input name="phone" type="tel" required autocomplete="tel"></label>
+            </div>
+            <label><span data-i18n="form.email">E-mail</span>
+              <input name="email" type="email" autocomplete="email"></label>
+            <label><span id="msgLabel" data-i18n="form.msg">Message</span>
+              <textarea name="msg" rows="3"></textarea></label>
+            <!-- anti-spam (champ invisible) -->
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <label class="check"><input type="checkbox" name="consent" required>
+              <span data-i18n="form.consent"></span></label>
+
+            <p class="form__error" id="formError" role="alert" hidden data-i18n="form.error"></p>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--red" id="submitBtn" data-i18n="form.submit">Envoyer la réservation</button>
+            </div>
+            <p class="muted small" data-i18n="form.hint"></p>
+          </form>
+
+          <div class="success" id="bookingOk" hidden tabindex="-1">
+            <div class="success__icon"><svg class="i" width="30" height="30" aria-hidden="true"><use href="#i-check"/></svg></div>
+            <h3 data-i18n="form.okTitle">Merci !</h3>
+            <p data-i18n="form.okText"></p>
+            <dl class="success__recap" id="recap"></dl>
+            <button type="button" class="btn btn--outline" id="againBtn" data-i18n="form.again">Nouvelle réservation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container contact__grid">
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Nous trouver</p>
+          <h2 class="title" data-i18n="contact.title">Venez nous voir</h2>
+          <dl class="info">
+            <div><dt data-i18n="contact.address">Adresse</dt>
+              <dd><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Agiou+Meletiou+73,+11251+Athens">Agiou Meletiou 73<br>11251 Athens, Greece</a></dd></div>
+            <div><dt data-i18n="contact.phone">Téléphone</dt>
+              <dd><a href="tel:+306931456288">+30 693 145 6288</a></dd></div>
+            <div><dt>E-mail</dt>
+              <dd><a href="mailto:aufeuduplaizir@gmail.com">aufeuduplaizir@gmail.com</a></dd></div>
+            <div><dt data-i18n="contact.hours">Horaires</dt>
+              <dd><table class="hours" id="hours"></table></dd></div>
+            <div><dt data-i18n="contact.pay">Paiement</dt>
+              <dd class="pay"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-banknote"/></svg><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-card"/></svg> <span data-i18n="contact.payD">Espèces · Carte bancaire</span></dd></div>
+          </dl>
+          <a class="btn btn--red" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Agiou+Meletiou+73,+11251+Athens" data-i18n="contact.directions">Itinéraire</a>
+        </div>
+
+        <!-- Carte chargée seulement après clic (RGPD : pas de cookies Google sans consentement) -->
+        <div class="map" id="map">
+          <div class="map__placeholder">
+            <svg width="40" height="40" aria-hidden="true"><use href="#pin"/></svg>
+            <p data-i18n="contact.mapText"></p>
+            <button type="button" class="btn btn--red btn--sm" id="loadMap" data-i18n="contact.mapBtn">Afficher la carte</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#top" class="logo logo--light">
+          <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#flame"/></svg>
+          <span class="logo__text">Au Feu <em>Du</em> Plaisir</span>
+        </a>
+        <p class="footer__tag" data-i18n="footer.tag"></p>
+      </div>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/aufeuduplaisir_athenes/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22"><use href="#ig"/></svg></a>
+        <a href="https://wa.me/306931456288" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="22" height="22"><use href="#wa"/></svg></a>
+        <a href="tel:+306931456288" aria-label="Phone"><svg width="22" height="22"><use href="#phone"/></svg></a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Au Feu Du Plaisir · Agiou Meletiou 73, Athens</span>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a class="fab" href="https://wa.me/306931456288" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" aria-hidden="true"><use href="#wa"/></svg>
+  </a>
+
+  <!-- ===== ICONES SVG ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flame" viewBox="0 0 40 40">
+      <path fill="currentColor" d="M20 2c1.5 6.5 9.5 10 9.5 19.5A9.5 9.5 0 0 1 20 31a9.5 9.5 0 0 1-9.5-9.5c0-4 2-6.5 3.5-8 .3 3 1.6 5 3.5 5.6C16 13 18.5 7.5 20 2Z"/>
+      <path fill="#fff" d="M20 16c.8 3 4.5 4.6 4.5 8.6A4.5 4.5 0 0 1 20 29a4.5 4.5 0 0 1-4.5-4.4c0-2.4 1.8-3.3 2.4-4.6.4 1.4 1.1 2.1 1.9 2.3-.4-2.4.2-4.4.2-6.3Z"/>
+      <rect x="8" y="33" width="24" height="3" rx="1.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="ig" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 3.8c2.7 0 3 0 4 .1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.4.1 4s0 3-.1 4c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.4.1-4 .1s-3 0-4-.1C5.3 20 4 18.7 3.9 16c-.1-1-.1-1.4-.1-4s0-3 .1-4C4 5.3 5.3 4 8 3.9c1-.1 1.3-.1 4-.1ZM12 2C9.3 2 8.9 2 7.9 2.1 4.2 2.2 2.2 4.2 2.1 7.9 2 8.9 2 9.3 2 12s0 3.1.1 4.1c.1 3.7 2.1 5.7 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c3.7-.1 5.7-2.1 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.1-3.7-2.1-5.7-5.8-5.8C15.1 2 14.7 2 12 2Z"/></symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4.2-.4c.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4.1 1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3Z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></symbol>
+    <!-- Icônes Lucide (licence ISC) -->
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+    <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/><path d="M6 12a6 6 0 0 1 6-6"/><path d="M18 12a6 6 0 0 1-6 6"/></symbol>
+    <symbol id="i-wine" viewBox="0 0 24 24"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-banknote" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  </svg>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
