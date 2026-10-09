@@ -1,13 +1,24 @@
-Déposez ici les vraies photos du restaurant (format JPG, idéalement < 300 Ko chacune).
-Les noms doivent être exactement ceux-ci ; le site les affiche automatiquement :
+PHOTOS DU SITE
+==============
 
-  hero.jpg        Grande photo d'accueil (plat signature ou salle), paysage, 1920x1080
-  about.jpg       Portrait (chef, équipe ou cuisine), vertical 4:5, 1000x1250
-  gallery-1.jpg   Grande photo de galerie (carrée), 1200x1200
-  gallery-2.jpg   à gallery-5.jpg : plats, salle, ambiance, façade, 800x600 minimum
-  og-cover.jpg    Image d'aperçu lors d'un partage WhatsApp/Facebook, 1200x630
+Photos actuelles = ILLUSTRATIONS PROVISOIRES (banque d'images Unsplash, licence Unsplash :
+usage commercial autorisé, mention non obligatoire). Elles ne montrent PAS le vrai restaurant
+ni ses vrais plats : à remplacer par les vraies photos avant le lancement officiel.
 
-Tant qu'une photo manque, un fond rouge dégradé s'affiche à sa place.
+  Fichier          Emplacement            Source Unsplash
+  hero.webp        Accueil                https://unsplash.com/photos/hVnClpnYUUk
+  og-cover.jpg     Aperçu partage (1200x630, même photo que l'accueil)
+  about.webp       Notre histoire         https://unsplash.com/photos/iu5u3JrguHU
+  night.webp       Soirées                https://unsplash.com/photos/vZZ6clgfJDA
+  gallery-1.webp   Galerie (grande)       https://unsplash.com/photos/U9KvS-fLDwo
+  gallery-2.webp   Galerie                https://unsplash.com/photos/G5KEBiLhIro
+  gallery-3.webp   Galerie                https://unsplash.com/photos/0A03YQqU4CU
+  gallery-4.webp   Galerie                https://unsplash.com/photos/IdYOlm05E5Y
+  gallery-5.webp   Galerie                https://unsplash.com/photos/3XXkojDxK_g
+
+REMPLACER UNE PHOTO
+Garder exactement le même nom de fichier (format WebP conseillé, 1200 à 1600 px de large,
+moins de 400 Ko). Pour un JPG, changer aussi l'extension dans index.html.
 
 LOGO : quand le client l'aura, déposer images/logo.svg (ou logo.png fond transparent)
 et remplacer le logo provisoire dans index.html (commentaire « Logo provisoire » en haut).
