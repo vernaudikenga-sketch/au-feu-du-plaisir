@@ -91,14 +91,15 @@
   <main id="main">
     <!-- ===== HERO ===== -->
     <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
       <div class="container hero__grid">
-        <div class="hero__text">
-          <p class="kicker" data-i18n="hero.eyebrow">Congo · Cameroun · Côte d'Ivoire</p>
+        <div class="hero__panel glass glass--dark">
+          <p class="kicker kicker--light" data-i18n="hero.eyebrow">Congo · Cameroun · Côte d'Ivoire</p>
           <h1 class="hero__title" data-i18n-html="hero.title">Le goût de l'Afrique,<br><em>au cœur d'Athènes</em></h1>
           <p class="hero__sub" data-i18n="hero.sub"></p>
           <div class="hero__ctas">
             <a href="#booking" class="btn btn--primary btn--lg" data-i18n="hero.book">Réserver une table</a>
-            <a href="#menu" class="btn btn--outline btn--lg">
+            <a href="#menu" class="btn btn--glass btn--lg">
               <span data-i18n="hero.menu">Voir le menu</span>
               <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
@@ -111,28 +112,24 @@
             <span class="rating__label" data-i18n="hero.fact1">39 avis Google</span>
           </a>
         </div>
-
-        <div class="hero__visual">
-          <div class="hero__photo photo" style="background-image:url('images/hero.webp'),var(--ph)" role="img" aria-label="Au Feu Du Plaisir">
-            <span class="photo__label">images/hero.webp</span>
-          </div>
-          <!-- Plat du jour (rempli depuis config.js) -->
-          <div class="hero__daily" id="heroDaily" hidden></div>
+        <!-- Plat du jour (rempli depuis config.js) -->
+        <div class="hero__side">
+          <div class="hero__daily glass" id="heroDaily" hidden></div>
         </div>
       </div>
-    </section>
 
-    <!-- ===== BANDEAU ===== -->
-    <section class="band" aria-label="Au Feu Du Plaisir">
-      <div class="container band__grid">
-        <div class="band__item"><svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-utensils"/></svg>
-          <div><h2 data-i18n="band.1t"></h2><p data-i18n="band.1d"></p></div></div>
-        <div class="band__item"><svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-flame"/></svg>
-          <div><h2 data-i18n="band.2t"></h2><p data-i18n="band.2d"></p></div></div>
-        <div class="band__item"><svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-music"/></svg>
-          <div><h2 data-i18n="band.3t"></h2><p data-i18n="band.3d"></p></div></div>
-        <div class="band__item"><svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-bag"/></svg>
-          <div><h2 data-i18n="band.4t"></h2><p data-i18n="band.4d"></p></div></div>
+      <!-- Bandeau des points forts -->
+      <div class="container">
+        <div class="band glass glass--red">
+          <div class="band__item"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-utensils"/></svg>
+            <div><h2 data-i18n="band.1t"></h2><p data-i18n="band.1d"></p></div></div>
+          <div class="band__item"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-flame"/></svg>
+            <div><h2 data-i18n="band.2t"></h2><p data-i18n="band.2d"></p></div></div>
+          <div class="band__item"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-music"/></svg>
+            <div><h2 data-i18n="band.3t"></h2><p data-i18n="band.3d"></p></div></div>
+          <div class="band__item"><svg class="i" width="26" height="26" aria-hidden="true"><use href="#i-bag"/></svg>
+            <div><h2 data-i18n="band.4t"></h2><p data-i18n="band.4d"></p></div></div>
+        </div>
       </div>
     </section>
 
@@ -157,7 +154,7 @@
     </section>
 
     <!-- ===== MENU ===== -->
-    <section class="section section--cream" id="menu">
+    <section class="section section--photo section--menu" id="menu">
       <div class="container">
         <div class="section__head">
           <div>
@@ -166,9 +163,11 @@
           </div>
           <p class="muted section__intro" data-i18n="menu.sub"></p>
         </div>
-        <div class="tabs" role="tablist" id="menuTabs"></div>
-        <div class="menu__list" id="menuList" role="tabpanel"></div>
-        <p class="menu__note muted" data-i18n="menu.note"></p>
+        <div class="menu__panel glass">
+          <div class="tabs" role="tablist" id="menuTabs"></div>
+          <div class="menu__list" id="menuList" role="tabpanel"></div>
+          <p class="menu__note muted" data-i18n="menu.note"></p>
+        </div>
       </div>
     </section>
 
@@ -180,25 +179,22 @@
           <h2 class="title title--light" data-i18n="nights.title"></h2>
           <p class="nights__sub" data-i18n="nights.sub"></p>
           <ul class="nlist">
-            <li><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-mic"/></svg>
+            <li class="glass glass--dark"><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-mic"/></svg>
               <div><h3 data-i18n="nights.c1t"></h3><p data-i18n="nights.c1d"></p></div></li>
-            <li><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-disc"/></svg>
+            <li class="glass glass--dark"><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-disc"/></svg>
               <div><h3 data-i18n="nights.c2t"></h3><p data-i18n="nights.c2d"></p></div></li>
-            <li><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-wine"/></svg>
+            <li class="glass glass--dark"><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-wine"/></svg>
               <div><h3 data-i18n="nights.c3t"></h3><p data-i18n="nights.c3d"></p></div></li>
-            <li><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-users"/></svg>
+            <li class="glass glass--dark"><svg class="i" width="24" height="24" aria-hidden="true"><use href="#i-users"/></svg>
               <div><h3 data-i18n="nights.c4t"></h3><p data-i18n="nights.c4d"></p></div></li>
           </ul>
           <div class="nights__ctas">
             <a href="#booking" class="btn btn--primary" data-book-type="night" data-i18n="nights.book">Réserver pour une soirée</a>
-            <a href="#booking" class="btn btn--outline-light" data-book-type="event" data-i18n="nights.private">Demander un devis</a>
+            <a href="#booking" class="btn btn--glass" data-book-type="event" data-i18n="nights.private">Demander un devis</a>
           </div>
         </div>
         <aside class="nights__side">
-          <div class="nights__photo photo" style="background-image:url('images/night.webp'),var(--ph-dark)" role="img" aria-label="Club">
-            <span class="photo__label">images/night.webp</span>
-          </div>
-          <div class="agenda">
+          <div class="agenda glass glass--dark">
             <h3 class="agenda__title"><svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="nights.agenda">Au programme</span></h3>
             <div id="agenda"></div>
           </div>
@@ -217,7 +213,7 @@
             <a class="btn btn--white" href="tel:+306931456288">
               <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-phone"/></svg>
               <span data-i18n="order.call">Commander par téléphone</span></a>
-            <a class="btn btn--outline-light" id="orderWa" href="https://wa.me/306931456288" target="_blank" rel="noopener">
+            <a class="btn btn--glass" id="orderWa" href="https://wa.me/306931456288" target="_blank" rel="noopener">
               <svg width="18" height="18" aria-hidden="true"><use href="#wa"/></svg>
               <span data-i18n="order.wa">Commander sur WhatsApp</span></a>
           </div>
@@ -227,12 +223,12 @@
           </div>
         </div>
         <div class="order__cards">
-          <article class="ocard">
+          <article class="ocard glass glass--clear">
             <svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-bag"/></svg>
             <h3 data-i18n="order.takeaway">À emporter</h3>
             <p data-i18n="order.takeawayD"></p>
           </article>
-          <article class="ocard">
+          <article class="ocard glass glass--clear">
             <svg class="i" width="28" height="28" aria-hidden="true"><use href="#i-bike"/></svg>
             <h3 data-i18n="order.delivery">Livraison</h3>
             <p data-i18n="order.deliveryD"></p>
@@ -249,7 +245,7 @@
             <p class="kicker" data-i18n="gallery.eyebrow">Galerie</p>
             <h2 class="title" data-i18n="gallery.title">L'ambiance du Feu</h2>
           </div>
-          <a class="link-arrow" href="https://www.instagram.com/aufeuduplaisir_athenes/" target="_blank" rel="noopener">
+          <a class="btn btn--soft" href="https://www.instagram.com/aufeuduplaisir_athenes/" target="_blank" rel="noopener">
             <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-instagram"/></svg>
             <span data-i18n="gallery.ig">Suivez-nous sur Instagram</span>
             <svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg>
@@ -266,8 +262,8 @@
     </section>
 
     <!-- ===== AVIS ===== -->
-    <section class="reviews" id="reviews">
-      <div class="container reviews__inner">
+    <section class="reviews section--photo" id="reviews">
+      <div class="container reviews__inner glass">
         <div class="reviews__score">
           <span class="reviews__num">4,6<small>/5</small></span>
           <span class="stars stars--lg" role="img" aria-label="4.6 / 5">
@@ -283,14 +279,14 @@
         <div class="reviews__ctas">
           <a class="btn btn--primary" target="_blank" rel="noopener"
              href="https://www.google.com/maps/search/?api=1&query=Au+Feu+Du+Plaisir+Agiou+Meletiou+73+Athens" data-i18n="reviews.read">Lire les avis</a>
-          <a class="btn btn--outline" target="_blank" rel="noopener"
+          <a class="btn btn--soft" target="_blank" rel="noopener"
              href="https://www.google.com/maps/search/?api=1&query=Au+Feu+Du+Plaisir+Agiou+Meletiou+73+Athens" data-i18n="reviews.write">Laisser un avis</a>
         </div>
       </div>
     </section>
 
     <!-- ===== RÉSERVATION EN LIGNE ===== -->
-    <section class="section section--cream" id="booking">
+    <section class="section section--photo section--booking" id="booking">
       <div class="container booking__grid">
         <div class="booking__info">
           <p class="kicker" data-i18n="booking.eyebrow">Réservation en ligne</p>
@@ -303,7 +299,7 @@
           <p class="muted small" data-i18n="booking.groups"></p>
         </div>
 
-        <div class="booking__box">
+        <div class="booking__box glass">
           <form class="form" id="bookingForm" novalidate>
             <fieldset class="types">
               <legend data-i18n="form.type">Type de réservation</legend>
@@ -355,7 +351,7 @@
             <h3 data-i18n="form.okTitle">Merci !</h3>
             <p data-i18n="form.okText"></p>
             <dl class="success__recap" id="recap"></dl>
-            <button type="button" class="btn btn--outline" id="againBtn" data-i18n="form.again">Nouvelle réservation</button>
+            <button type="button" class="btn btn--soft" id="againBtn" data-i18n="form.again">Nouvelle réservation</button>
           </div>
         </div>
       </div>
@@ -391,7 +387,7 @@
         </div>
 
         <!-- Carte chargée seulement après clic (RGPD : pas de cookies Google sans consentement) -->
-        <div class="map" id="map">
+        <div class="map glass" id="map">
           <div class="map__placeholder">
             <svg class="i" width="36" height="36" aria-hidden="true"><use href="#i-pin"/></svg>
             <p data-i18n="contact.mapText"></p>
