@@ -199,7 +199,7 @@
   const links = $$('.nav a[href^="#"]:not(.btn)');
   const spy = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
-      if (e.isIntersecting) links.forEach((a) => a.classList.toggle("is-active", a.getAttribute("href") === "#" + e.target.id));
+      if (e.isIntersecting) links.forEach((a) => a.classList.toggle("is-active", a.getAttribute("href") === "#" + (e.target.dataset.nav || e.target.id)));
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
   $$("main section[id]").forEach((s) => spy.observe(s));
