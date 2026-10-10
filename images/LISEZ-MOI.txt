@@ -20,5 +20,8 @@ REMPLACER UNE PHOTO
 Garder exactement le même nom de fichier (format WebP conseillé, 1200 à 1600 px de large,
 moins de 400 Ko). Pour un JPG, changer aussi l'extension dans index.html.
 
-LOGO : quand le client l'aura, déposer images/logo.svg (ou logo.png fond transparent)
-et remplacer le logo provisoire dans index.html (commentaire « Logo provisoire » en haut).
+LOGO (fourni par le client, détouré en cercle sur fond transparent)
+  logo.webp             En-tête et pied de page
+  logo.png              512 px, pour Google et les réseaux sociaux
+  favicon-48.png        Icône de l'onglet du navigateur
+  apple-touch-icon.png  Icône sur l'écran d'accueil d'un téléphone
