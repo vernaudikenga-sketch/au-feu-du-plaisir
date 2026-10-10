@@ -61,6 +61,56 @@ const CONFIG = {
               en: "Slow-cooked chicken with vegetables, with attiéké." } }
   },
 
+  /* Équipe (page equipe.html)
+     ⚠ Textes PROVISOIRES à valider avec le client.
+     name  : laisser "" tant que le nom n'est pas connu (affiche « Prénom Nom »)
+     photo : chemin de la photo (ex. "images/team/ruth.webp"), "" = pas de photo
+     langs : langues parlées, affichées sous la carte (ex. "FR · Lingala · EL") */
+  team: {
+    founder: {
+      name: "Ruth Bialua",
+      photo: "images/team/ruth.webp",
+      role: { el: "Διευθύντρια", fr: "Manager", en: "Manager" },
+      bio: {
+        el: "Η Ruth Bialua διευθύνει το Au Feu Du Plaisir. Φροντίζει ώστε κάθε επισκέπτης να νιώθει σαν στο σπίτι του: από το πιάτο της ημέρας ως τις βραδιές με μουσική, τίποτα δεν αφήνεται στην τύχη.",
+        fr: "Ruth Bialua dirige Au Feu Du Plaisir. Elle veille à ce que chaque client se sente comme à la maison : du plat du jour aux soirées en musique, rien n'est laissé au hasard.",
+        en: "Ruth Bialua runs Au Feu Du Plaisir. She makes sure every guest feels at home: from the dish of the day to the music nights, nothing is left to chance."
+      }
+    },
+    members: [
+      { name: "", photo: "", langs: "",
+        role: { el: "Σεφ", fr: "Chef de cuisine", en: "Head chef" },
+        bio: { el: "Υπεύθυνος για τις αυθεντικές συνταγές του Κονγκό, του Καμερούν και της Ακτής Ελεφαντοστού.",
+               fr: "Garant des recettes authentiques du Congo, du Cameroun et de Côte d'Ivoire.",
+               en: "Keeper of the authentic recipes from Congo, Cameroon and Ivory Coast." } },
+      { name: "", photo: "", langs: "",
+        role: { el: "Υπεύθυνος σχάρας", fr: "Maître du grill", en: "Grill master" },
+        bio: { el: "Κοτόπουλο, ψάρι και soya ψημένα τη στιγμή, με τα σωστά μπαχαρικά.",
+               fr: "Poulet, poisson et soya grillés à la minute, avec les bonnes épices.",
+               en: "Chicken, fish and soya grilled to order, with just the right spices." } },
+      { name: "", photo: "", langs: "",
+        role: { el: "Υπεύθυνος σάλας", fr: "Responsable de salle", en: "Floor manager" },
+        bio: { el: "Σας υποδέχεται, σας συμβουλεύει για το μενού και φροντίζει το τραπέζι σας.",
+               fr: "Vous accueille, vous conseille sur la carte et veille sur votre table.",
+               en: "Welcomes you, guides you through the menu and looks after your table." } },
+      { name: "", photo: "", langs: "",
+        role: { el: "Barman", fr: "Barman / Barmaid", en: "Bartender" },
+        bio: { el: "Cocktails, σπιτικό tangawisi και φιάλες για τις βραδιές.",
+               fr: "Cocktails, tangawisi maison et bouteilles pour les soirées.",
+               en: "Cocktails, homemade tangawisi and bottles for party nights." } },
+      { name: "", photo: "", langs: "",
+        role: { el: "Resident DJ", fr: "DJ résident", en: "Resident DJ" },
+        bio: { el: "Rumba, ndombolo, makossa, coupé-décalé και afrobeats μέχρι αργά.",
+               fr: "Rumba, ndombolo, makossa, coupé-décalé et afrobeats jusqu'au bout de la nuit.",
+               en: "Rumba, ndombolo, makossa, coupé-décalé and afrobeats until late." } },
+      { name: "", photo: "", langs: "",
+        role: { el: "Εκδηλώσεις & κρατήσεις", fr: "Événements & réservations", en: "Events & bookings" },
+        bio: { el: "Οργανώνει γενέθλια, ιδιωτικές εκδηλώσεις και ενοικιάσεις του χώρου.",
+               fr: "Organise anniversaires, événements privés et privatisations de la salle.",
+               en: "Organises birthdays, private events and venue hire." } }
+    ]
+  },
+
   /* Agenda des soirées. Les dates passées disparaissent automatiquement.
      Exemple :
      { date: "2026-10-24", time: "22:00",

@@ -25,3 +25,9 @@ LOGO (fourni par le client, détouré en cercle sur fond transparent)
   logo.png              512 px, pour Google et les réseaux sociaux
   favicon-48.png        Icône de l'onglet du navigateur
   apple-touch-icon.png  Icône sur l'écran d'accueil d'un téléphone
+
+ÉQUIPE (page equipe.html)
+  Déposer les portraits dans images/team/ (format carré conseillé, WebP, ~600 px).
+  team/ruth.webp        Ruth Bialua, manager (emplacement déjà prévu)
+  Pour les autres membres : indiquer le chemin dans js/config.js (champ photo).
+  Noms, rôles, textes et langues parlées : tout se modifie dans js/config.js (section team).
