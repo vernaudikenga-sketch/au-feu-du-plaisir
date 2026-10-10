@@ -242,6 +242,8 @@ a, button, label, select { -webkit-tap-highlight-color: transparent; touch-actio
 .section__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem 3rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
 .section__head .title { margin: 0; }
 .section__intro { max-width: 44ch; margin: 0; }
+.section__head--stack { flex-direction: column; align-items: flex-start; gap: 1rem; }
+.section__head--stack .section__intro { max-width: 60ch; font-size: 1.05rem; }
 
 /* ---------- Histoire ---------- */
 .about__grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px, 7vw, 104px); align-items: center; }
