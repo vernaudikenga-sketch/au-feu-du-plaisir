@@ -183,6 +183,7 @@
         ${m.langs ? `<p class="member__langs"><svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-globe"/></svg>${esc(m.langs)}</p>` : ""}
       </article>`;
     }).join("");
+    if (typeof observeShine === "function") observeShine();
     $("#joinMail").href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(t("team.joinSubject") + " — Au Feu Du Plaisir")}`;
   }
 
@@ -203,6 +204,13 @@
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
   $$("main section[id]").forEach((s) => spy.observe(s));
+
+  /* ---------- Reflet de lumière sur les cartes (écrans tactiles : à l'apparition) ---------- */
+  const shine = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("en-vue"); shine.unobserve(e.target); } });
+  }, { threshold: 0.6 });
+  const observeShine = () => $$(".member, .value, .ocard, .nlist li").forEach((el) => shine.observe(el));
+  observeShine();
 
   /* ---------- Photos : masque l'étiquette quand l'image existe ---------- */
   $$(".photo").forEach((el) => {

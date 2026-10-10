@@ -140,6 +140,30 @@ a, button, label, select { -webkit-tap-highlight-color: transparent; touch-actio
 .btn--soft:hover { background: #fff; border-color: rgba(28, 20, 20, .3); }
 .btn:disabled { opacity: .5; cursor: not-allowed; }
 
+/* Reflet de lumière au survol (même effet que libyangi.pyramide-id.com) */
+.btn, .member, .value, .ocard, .nlist li { position: relative; overflow: hidden; isolation: isolate; }
+.btn::after {
+  content: ""; position: absolute; inset: -2px; pointer-events: none;
+  background: linear-gradient(115deg, transparent 32%, rgba(255, 255, 255, .5) 48%, rgba(255, 255, 255, .12) 54%, transparent 72%);
+  transform: translateX(-130%) skewX(-8deg); transition: transform .75s;
+}
+.btn:hover::after, .btn:focus-visible::after { transform: translateX(130%) skewX(-8deg); }
+/* sur les boutons clairs, un reflet rosé reste visible */
+.btn--white::after, .btn--soft::after {
+  background: linear-gradient(115deg, transparent 32%, rgba(200, 16, 46, .16) 48%, rgba(200, 16, 46, .05) 54%, transparent 72%);
+}
+.member::after, .value::after, .ocard::after, .nlist li::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, .5) 48%, rgba(255, 255, 255, .12) 53%, transparent 70%);
+  transform: translateX(-130%); transition: transform .85s;
+}
+.nlist li::after { background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, .16) 48%, rgba(255, 255, 255, .04) 53%, transparent 70%); }
+.member:hover::after, .value:hover::after, .ocard:hover::after, .nlist li:hover::after { transform: translateX(130%); }
+/* écrans tactiles : le reflet passe une fois quand la carte apparaît */
+@media (hover: none) {
+  .member.en-vue::after, .value.en-vue::after, .ocard.en-vue::after, .nlist li.en-vue::after { transform: translateX(130%); }
+}
+
 /* ---------- Barre d'infos ---------- */
 .topbar { background: var(--ink); color: rgba(255, 255, 255, .82); font-size: .85rem; position: relative; z-index: 51; }
 .topbar__inner { display: flex; align-items: center; gap: 1.75rem; min-height: 40px; }
@@ -426,7 +450,9 @@ a, button, label, select { -webkit-tap-highlight-color: transparent; touch-actio
 .footer__social { display: flex; gap: .5rem; }
 .footer__social a { width: 44px; height: 44px; display: grid; place-items: center; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .12); border-radius: 50%; color: #fff; transition: background-color .2s var(--ease), border-color .2s var(--ease); }
 .footer__social a:hover { background: var(--red); border-color: var(--red); }
-.footer__bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; margin-top: 56px; padding: 1.4rem 0; border-top: 1px solid rgba(255, 255, 255, .1); font-size: .82rem; }
+.footer__bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; margin-top: 56px; padding: 1.4rem 0; border-top: 1px solid rgba(255, 255, 255, .1); font-size: .82rem; }
+.credit { letter-spacing: .02em; }
+.credit strong { color: #fff; font-weight: 700; }
 
 /* ---------- WhatsApp flottant ---------- */
 .fab { position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 40; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: #25D366; color: #fff; box-shadow: 0 6px 18px rgba(0, 0, 0, .22), inset 0 1px 0 rgba(255, 255, 255, .3); }
