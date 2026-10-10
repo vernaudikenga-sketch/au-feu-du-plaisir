@@ -16,6 +16,12 @@ ni ses vrais plats : à remplacer par les vraies photos avant le lancement offic
   gallery-4.webp   Galerie                https://unsplash.com/photos/IdYOlm05E5Y
   gallery-5.webp   Galerie                https://unsplash.com/photos/3XXkojDxK_g
 
+SERVICE TRAITEUR
+  traiteur.webp    Photo principale       VRAIE PHOTO fournie par le client (buffet)
+  traiteur-1.webp  Illustration           https://unsplash.com/photos/qoxK2LBKmIs
+  traiteur-2.webp  Illustration           https://unsplash.com/photos/SbPAVmMQSi8
+  traiteur-3.webp  Illustration           https://unsplash.com/photos/aEnH4hJ_Mrs
+
 REMPLACER UNE PHOTO
 Garder exactement le même nom de fichier (format WebP conseillé, 1200 à 1600 px de large,
 moins de 400 Ko). Pour un JPG, changer aussi l'extension dans index.html.

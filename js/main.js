@@ -49,6 +49,7 @@
     renderHours();
     renderToday();
     renderOrder();
+    renderCatering();
     renderTeam();
     refreshBookingFields();
   }
@@ -153,6 +154,12 @@
   }
 
   /* ---------- Commande à emporter / livraison ---------- */
+  function renderCatering() {
+    if (!$("#caterWa")) return;
+    $("#caterWa").href = `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(t("cater.waText"))}`;
+    $("#caterMail").href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(t("cater.mailSubject"))}&body=${encodeURIComponent(t("cater.waText"))}`;
+  }
+
   function renderOrder() {
     if (!$("#orderWa")) return;
     $("#orderWa").href = `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(t("order.waText"))}`;
@@ -209,7 +216,7 @@
   const shine = new IntersectionObserver((entries) => {
     entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("en-vue"); shine.unobserve(e.target); } });
   }, { threshold: 0.6 });
-  const observeShine = () => $$(".member, .value, .ocard, .nlist li").forEach((el) => shine.observe(el));
+  const observeShine = () => $$(".member, .value, .ocard, .nlist li, .offers li").forEach((el) => shine.observe(el));
   observeShine();
 
   /* ---------- Photos : masque l'étiquette quand l'image existe ---------- */

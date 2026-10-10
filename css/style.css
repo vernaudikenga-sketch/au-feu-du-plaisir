@@ -578,3 +578,50 @@ a, button, label, select { -webkit-tap-highlight-color: transparent; touch-actio
   .team-grid, .values { grid-template-columns: 1fr; }
   .join .order__ctas .btn { flex: 1 1 100%; }
 }
+
+
+/* ==========================================================
+   Service traiteur
+   ========================================================== */
+.catering { background: var(--cream); }
+.catering__grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(40px, 6vw, 88px); align-items: center; }
+.catering__main { position: relative; margin: 0; }
+.catering__photo { aspect-ratio: 4 / 5; border-radius: var(--r-lg); }
+.catering__caption {
+  position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: .5rem;
+  padding: .6rem 1rem; border-radius: 999px; font-size: .85rem; font-weight: 700;
+}
+.catering__caption .i { color: var(--red); }
+.offers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 2rem 0; }
+.offers li { display: flex; gap: .9rem; padding: 1.1rem; background: #fff; border: 1px solid var(--line); border-radius: var(--r-sm); position: relative; overflow: hidden; isolation: isolate; }
+.offers li > .i { width: 40px; height: 40px; padding: 9px; border-radius: 10px; background: var(--red-soft); color: var(--red); }
+.offers h3 { font: 800 1.1rem/1.1 var(--display); text-transform: uppercase; margin: 0 0 .25rem; }
+.offers p { margin: 0; font-size: .88rem; color: var(--muted); line-height: 1.5; }
+.offers li::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(115deg, transparent 30%, rgba(200, 16, 46, .08) 48%, rgba(200, 16, 46, .03) 53%, transparent 70%);
+  transform: translateX(-130%); transition: transform .85s;
+}
+.offers li:hover::after { transform: translateX(130%); }
+@media (hover: none) { .offers li.en-vue::after { transform: translateX(130%); } }
+.catering__ctas { display: flex; flex-wrap: wrap; gap: .75rem; }
+.catering__strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: clamp(40px, 6vw, 72px); }
+.catering__strip .photo { aspect-ratio: 4 / 3; border-radius: var(--r); }
+.steps__title { font: 800 1.5rem/1 var(--display); text-transform: uppercase; margin: clamp(40px, 6vw, 64px) 0 1.25rem; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; counter-reset: none; }
+.steps li { display: flex; gap: 1rem; align-items: flex-start; padding: 1.4rem; border-radius: var(--r); background: rgba(255, 255, 255, .8); }
+.steps__num { flex: none; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: var(--red); color: #fff; font: 800 1.2rem/1 var(--display); }
+.steps h4 { font: 800 1.15rem/1.1 var(--display); text-transform: uppercase; margin: .35rem 0 .3rem; }
+.steps p { margin: 0; font-size: .9rem; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .catering__grid { grid-template-columns: 1fr; }
+  .catering__photo { aspect-ratio: 4 / 3; }
+  .steps { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .offers { grid-template-columns: 1fr; }
+  .catering__strip { grid-template-columns: 1fr 1fr; }
+  .catering__strip .photo:last-child { grid-column: span 2; aspect-ratio: 16 / 9; }
+  .catering__ctas .btn { flex: 1 1 100%; }
+}

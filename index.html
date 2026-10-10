@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sofia+Sans+Condensed:ital,wght@0,600;0,800;0,900;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=202610101057">
+  <link rel="stylesheet" href="css/style.css?v=202610101132">
 
   <script type="application/ld+json">
   {
@@ -77,6 +77,7 @@
         <a href="#menu" data-i18n="nav.menu">Menu</a>
         <a href="#nights" data-i18n="nav.nights">Soirées</a>
         <a href="#order" data-i18n="nav.order">Commander</a>
+        <a href="#catering" data-i18n="nav.cater">Traiteur</a>
         <a href="#gallery" data-i18n="nav.gallery">Galerie</a>
         <a href="#team" data-i18n="nav.team">L'équipe</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -236,6 +237,55 @@
             <p data-i18n="order.deliveryD"></p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICE TRAITEUR ===== -->
+    <section class="section catering" id="catering">
+      <div class="container catering__grid">
+        <figure class="catering__main">
+          <div class="catering__photo photo" style="background-image:url('images/traiteur.webp'),var(--ph)" role="img" aria-label="Buffet Au Feu Du Plaisir">
+            <span class="photo__label">images/traiteur.webp</span>
+          </div>
+          <figcaption class="catering__caption glass"><svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-utensils"/></svg><span data-i18n="cater.caption">Un de nos buffets traiteur</span></figcaption>
+        </figure>
+
+        <div class="catering__text">
+          <p class="kicker" data-i18n="cater.eyebrow">Service traiteur</p>
+          <h2 class="title" data-i18n="cater.title"></h2>
+          <p class="lead" data-i18n="cater.sub"></p>
+          <ul class="offers">
+            <li><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-utensils"/></svg>
+              <div><h3 data-i18n="cater.o1t"></h3><p data-i18n="cater.o1d"></p></div></li>
+            <li><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-users"/></svg>
+              <div><h3 data-i18n="cater.o2t"></h3><p data-i18n="cater.o2d"></p></div></li>
+            <li><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-briefcase"/></svg>
+              <div><h3 data-i18n="cater.o3t"></h3><p data-i18n="cater.o3d"></p></div></li>
+            <li><svg class="i" width="22" height="22" aria-hidden="true"><use href="#i-leaf"/></svg>
+              <div><h3 data-i18n="cater.o4t"></h3><p data-i18n="cater.o4d"></p></div></li>
+          </ul>
+          <div class="catering__ctas">
+            <a class="btn btn--primary btn--lg" id="caterWa" href="https://wa.me/306931456288" target="_blank" rel="noopener">
+              <svg width="18" height="18" aria-hidden="true"><use href="#wa"/></svg><span data-i18n="cater.quote">Demander un devis</span></a>
+            <a class="btn btn--soft btn--lg" id="caterMail" href="mailto:aufeuduplaizir@gmail.com">
+              <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="cater.mail">Par e-mail</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="catering__strip">
+          <div class="photo" style="background-image:url('images/traiteur-1.webp'),var(--ph)"><span class="photo__label">traiteur-1.webp</span></div>
+          <div class="photo" style="background-image:url('images/traiteur-2.webp'),var(--ph)"><span class="photo__label">traiteur-2.webp</span></div>
+          <div class="photo" style="background-image:url('images/traiteur-3.webp'),var(--ph)"><span class="photo__label">traiteur-3.webp</span></div>
+        </div>
+
+        <h3 class="steps__title" data-i18n="cater.steps">Comment ça marche</h3>
+        <ol class="steps">
+          <li class="glass"><span class="steps__num">1</span><div><h4 data-i18n="cater.s1t"></h4><p data-i18n="cater.s1d"></p></div></li>
+          <li class="glass"><span class="steps__num">2</span><div><h4 data-i18n="cater.s2t"></h4><p data-i18n="cater.s2d"></p></div></li>
+          <li class="glass"><span class="steps__num">3</span><div><h4 data-i18n="cater.s3t"></h4><p data-i18n="cater.s3d"></p></div></li>
+        </ol>
       </div>
     </section>
 
@@ -550,10 +600,11 @@
     <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
     <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
     <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
   </svg>
 
-  <script src="js/config.js?v=202610101057"></script>
-  <script src="js/i18n.js?v=202610101057"></script>
-  <script src="js/main.js?v=202610101057"></script>
+  <script src="js/config.js?v=202610101132"></script>
+  <script src="js/i18n.js?v=202610101132"></script>
+  <script src="js/main.js?v=202610101132"></script>
 </body>
 </html>
