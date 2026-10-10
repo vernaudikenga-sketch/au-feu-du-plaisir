@@ -168,9 +168,9 @@ a, button, label, select { -webkit-tap-highlight-color: transparent; touch-actio
 .footer .logo__mark { width: 96px; height: 96px; }
 .footer .logo { flex-direction: column; align-items: flex-start; gap: 1rem; }
 .logo__text { font: 800 1.4rem/1 var(--display); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; }
-.logo__name { display: flex; flex-direction: column; gap: .3rem; }
-.logo__sub { font: 700 .68rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--red); white-space: nowrap; }
-.footer .logo__sub { color: var(--red-light); font-size: .74rem; }
+.logo__name { display: flex; flex-direction: column; gap: .25rem; }
+.logo__sub { font: 700 .58rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--red); white-space: nowrap; }
+.footer .logo__sub { color: var(--red-light); font-size: .64rem; }
 .nav { display: flex; align-items: center; gap: .25rem; }
 .nav a { font-weight: 600; font-size: .93rem; text-decoration: none; padding: .55rem .9rem; border-radius: 999px; transition: background-color .2s var(--ease), color .2s var(--ease); }
 .nav a:hover { background: rgba(28, 20, 20, .06); }
